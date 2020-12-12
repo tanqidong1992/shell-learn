@@ -2,18 +2,19 @@
 
 person_name="tqd"
 person_age=123
-peson_alias="QidongTan"
+person_alias="QidongTan"
 
 # 大小写修改
 # ${PARAMETER^} 变量值中第一个字符改为大写
 # ${PARAMETER^^} 变量值中所有字符改为大写
 # ${PARAMETER,} 变量值的第一个字符改为小写
 # ${PARAMETER,,} 变量值的所有字符改为小写
-echo ${peson_alias^}
-echo ${peson_alias^^}
-echo ${peson_alias,}
-echo ${peson_alias,,}
-
+echo ${person_alias^}
+echo ${person_alias^^}
+echo ${person_alias,}
+echo ${person_alias,,}
+echo ${person_alias~}
+echo ${person_alias~~}
 #变量名扩展
 # ${!PREFIX@}
 # ${!PREFIX*}  列出所有以PREFIX开头的已定义变量
